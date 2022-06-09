@@ -2,7 +2,7 @@ const editor = document.getElementById("editor");
 const notes = document.getElementById("notes");
 
 let date = new Date();
-let date_to_string = "2022/5/10"; //String(date.getFullYear() + '/' + date.getMonth() + '/' + date.getDate())
+let date_to_string = String(date.getFullYear() + '/' + date.getMonth() + '/' + date.getDate())
 let array_new_dates = [];
 
 if (localStorage.getItem("dates") === null) {
